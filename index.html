@@ -7,13 +7,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <style>
-    /* لمسة جمالية تتناسب مع اسم SANDY */
-    :root { --theme-color: #d4a373; }
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-  </style>
-</head>
-<body>
-  <div id="app">جاري تحميل القوانين...</div>
+  :root {
+    --theme-color: #ff0000; /* لون ساندي الأحمر */
+  }
+
+  /* تخصيص الخلفية العامة */
+  body {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('رابط_صورة_خلفية_من_اللعبة');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff !important;
+  }
+
+  /* جعل القائمة الجانبية شفافة */
+  .sidebar {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    border-right: 1px solid #333;
+  }
+
+  /* تنسيق الأزرار لتشبه اللي في الصورة */
+  .content img[alt="logo"] {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,0,0,0.5);
+  }
+
+  .markdown-section h1 {
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px #000;
+  }
+</style>
   <script>
     window.$docsify = {
       name: 'SANDY RP',
