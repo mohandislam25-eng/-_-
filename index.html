@@ -1,52 +1,82 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>SANDY RP | Rules</title>
+  <title>SANDY RP | مقاطعة ساندي</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  
   <style>
-  :root {
-    --theme-color: #ff0000; /* لون ساندي الأحمر */
-  }
+    /* الخط والتنسيق العام */
+    :root {
+      --theme-color: #e63946;
+    }
+    
+    body {
+      background-color: #0d0d0d;
+      color: #eeeeee !important;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-  /* تخصيص الخلفية العامة */
-  body {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('رابط_صورة_خلفية_من_اللعبة');
-    background-size: cover;
-    background-attachment: fixed;
-    color: #fff !important;
-  }
+    /* خلفية الموقع كاملة */
+    .app-nav, section.content, .sidebar {
+      background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
+                        url('https://images.wallpaperscraft.com/image/single/grand_theft_auto_v_gta_5_rockstar_games_94101_1920x1080.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
 
-  /* جعل القائمة الجانبية شفافة */
-  .sidebar {
-    background-color: rgba(0, 0, 0, 0.8) !important;
-    border-right: 1px solid #333;
-  }
+    /* تنسيق القائمة الجانبية */
+    .sidebar {
+      border-right: 1px solid rgba(255,255,255,0.1);
+      color: #fff !important;
+    }
+    .sidebar ul li a {
+      color: #bbb !important;
+      font-weight: 500;
+    }
+    .sidebar ul li a:hover {
+      color: var(--theme-color) !important;
+    }
 
-  /* تنسيق الأزرار لتشبه اللي في الصورة */
-  .content img[alt="logo"] {
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255,0,0,0.5);
-  }
+    /* تعديل المحتوى الرئيسي */
+    .markdown-section {
+      max-width: 900px;
+      padding-top: 50px;
+    }
 
-  .markdown-section h1 {
-    text-align: center;
-    font-size: 3rem;
-    text-shadow: 2px 2px 10px #000;
-  }
-</style>
+    /* تنسيق الأزرار الاحترافي */
+    .custom-btn {
+      display: inline-block;
+      padding: 12px 35px;
+      margin: 10px;
+      border-radius: 5px;
+      text-decoration: none !important;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .btn-white { background: #fff; color: #000 !important; }
+    .btn-gold { background: #c5a059; color: #fff !important; border: 1px solid #c5a059; }
+    .custom-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+
+    /* إخفاء القائمة الجانبية في الصفحة الرئيسية فقط (اختياري) */
+    /* .ready.sticky .sidebar { display: none; } */
+  </style>
+</head>
+<body>
+  <div id="app">جاري تحميل عالم ساندي...</div>
   <script>
     window.$docsify = {
       name: 'SANDY RP',
       repo: '',
-      loadSidebar: false, // ممكن نفعله لاحقاً لو القوانين كترت
-      coverpage: false,
-      auto2top: true
+      loadSidebar: true,
+      subMaxLevel: 2,
+      auto2top: true,
+      placeholder: 'بحث...',
+      // إضافة خاصية RTL لدعم اللغة العربية بشكل صحيح
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
