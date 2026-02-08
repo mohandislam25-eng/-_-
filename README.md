@@ -4,18 +4,18 @@
 
 # مقاطعة ساندي
 
-أول خادم عربي يقدم تجربة بصرية تليق باللاعبين العرب، معنا ستجد المتعة الحقيقية لاهتمامنا بأدق وأصغر التفاصيل لتقديم الأفضل دائماً لكم.
+**أول خادم عربي يقدم تجربة بصرية تليق باللاعبين العرب، معنا ستجد المتعة الحقيقية لاهتمامنا بأدق وأصغر التفاصيل لتقديم الأفضل دائماً لكم.**
 
-<div class="hero-buttons">
-  <a href="https://discord.gg/uuA2ebYMxr" class="custom-btn btn-discord">الديسكورد</a>
-  <a href="#/join" class="custom-btn btn-join">دخول الخادم</a>
-</div>
+<br>
 
-<p style="color: #888; font-size: 0.9rem; margin-top: 10px;">أسرع من الخوادم العربية الأخرى</p>
+<a href="https://discord.gg/uuA2ebYMxr" class="hero-btn btn-gold">الديسكورد</a>
+<a href="#/join" class="hero-btn btn-white">دخول الخادم</a>
+
+<p style="color: #666; font-size: 0.85rem; margin-top: 20px;">أسرع من الخوادم العربية الأخرى</p>
 
 ---
 
-تابعنا على
+**تابعنا على**
 [TikTok](#) | [YouTube](#)
 
 </div>
