@@ -5,78 +5,97 @@
   <title>SANDY RP | مقاطعة ساندي</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   
   <style>
-    /* الخط والتنسيق العام */
+    /* التنسيقات العامة */
     :root {
-      --theme-color: #e63946;
-    }
-    
-    body {
-      background-color: #0d0d0d;
-      color: #eeeeee !important;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      --theme-color: #ff0000;
     }
 
-    /* خلفية الموقع كاملة */
-    .app-nav, section.content, .sidebar {
-      background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
-                        url('https://images.wallpaperscraft.com/image/single/grand_theft_auto_v_gta_5_rockstar_games_94101_1920x1080.jpg');
+    body {
+      background-color: #1a1a1a;
+      margin: 0;
+    }
+
+    /* خلفية الصفحة الرئيسية - مأخوذة من صورة المتصفح التي أرفقتها */
+    section.content, .sidebar {
+      background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('https://wallpapers.com/images/featured/gta-5-beach-9p2q4y7x8n1p2q4y.jpg');
       background-size: cover;
       background-attachment: fixed;
+      background-position: center;
     }
 
-    /* تنسيق القائمة الجانبية */
+    /* تنسيق القائمة الجانبية لتكون شفافة وفخمة */
     .sidebar {
-      border-right: 1px solid rgba(255,255,255,0.1);
+      background-color: rgba(0, 0, 0, 0.9) !important;
+      border-left: 1px solid rgba(255,255,255,0.1) !important;
       color: #fff !important;
     }
+
     .sidebar ul li a {
-      color: #bbb !important;
-      font-weight: 500;
-    }
-    .sidebar ul li a:hover {
-      color: var(--theme-color) !important;
+      color: #ccc !important;
+      text-align: right;
     }
 
-    /* تعديل المحتوى الرئيسي */
-    .markdown-section {
-      max-width: 900px;
-      padding-top: 50px;
+    /* تنسيق الأزرار كما في الصورة */
+    .hero-buttons {
+      margin-top: 30px;
     }
 
-    /* تنسيق الأزرار الاحترافي */
     .custom-btn {
       display: inline-block;
-      padding: 12px 35px;
+      padding: 12px 40px;
       margin: 10px;
-      border-radius: 5px;
+      border-radius: 10px;
       text-decoration: none !important;
       font-weight: bold;
-      transition: all 0.3s ease;
-      cursor: pointer;
+      font-size: 1.1rem;
+      transition: 0.3s;
     }
-    .btn-white { background: #fff; color: #000 !important; }
-    .btn-gold { background: #c5a059; color: #fff !important; border: 1px solid #c5a059; }
-    .custom-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
 
-    /* إخفاء القائمة الجانبية في الصفحة الرئيسية فقط (اختياري) */
-    /* .ready.sticky .sidebar { display: none; } */
+    .btn-discord {
+      background: #c5a059; /* اللون الذهبي كما في صورتك */
+      color: #fff !important;
+      border: 1px solid #c5a059;
+    }
+
+    .btn-join {
+      background: #eeeeee; /* اللون الأبيض الرمادي */
+      color: #333 !important;
+    }
+
+    .custom-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    }
+
+    /* اللوجو */
+    .main-logo {
+      width: 220px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(255,0,0,0.5);
+      margin-bottom: 20px;
+    }
+
+    /* تعديل اتجاه النص للغة العربية */
+    .markdown-section {
+      text-align: center !important;
+      color: #fff !important;
+    }
   </style>
 </head>
 <body>
-  <div id="app">جاري تحميل عالم ساندي...</div>
+  <div id="app">جاري تحميل مقاطعة ساندي...</div>
   <script>
     window.$docsify = {
       name: 'SANDY RP',
-      repo: '',
       loadSidebar: true,
-      subMaxLevel: 2,
       auto2top: true,
-      placeholder: 'بحث...',
-      // إضافة خاصية RTL لدعم اللغة العربية بشكل صحيح
-      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      // تأكد أن الروابط تعمل بشكل صحيح
+      homepage: 'README.md'
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
